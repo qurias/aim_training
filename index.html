@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png"type="image/x-icon">
+    <title>Traning</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container__greeting">
+      <h1 class='container__greeting__title'>Aim Training</h1>
+      <button class='container__greeting__button'>Start the game</button>
+    </div>
+    <div class="container__timing">
+      <h1 class="container__timing__title">Choose time</h1>
+      <div class="container__timing__buttons">
+        <button class="container__timing__buttons__button" value='15'>15 seconds</button>
+        <button class="container__timing__buttons__button" value='30'>30 seconds</button>
+        <button class="container__timing__buttons__button" value='60'>60 seconds</button>
+      </div>
+    </div>
+    <div class="container__appearance">
+      <h1 class="container__appearance__title">Choose time of appearance</h1>
+      <div class="container__appearance__buttons">
+        <button class="container__appearance__buttons__button" value='100'>0.1 second</button>
+        <button class="container__appearance__buttons__button" value='300'>0.3 second</button>
+        <button class="container__appearance__buttons__button" value='500'>0.5 second</button>
+      </div>
+    </div>
+    <div class="container__game">
+      <div class="container__game__scoreboard">
+          <p class="score">Score:<label class="score_value">0</label></p>
+          <p class="time">Time:<label class="time_value">10</label></p>
+        </div>
+      <div class="container__game__field">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src='jquery-3.6.0.min.js'></script>
+  <script src='script.js'></script>
+</body>
+</html>

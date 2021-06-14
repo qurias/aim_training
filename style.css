@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Staatliches", cursive; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(215.32deg, #161616 -1%, #252525 124%); }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container__greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 350px;
+    transition: all 0.5s; }
+    .container__greeting__title {
+      font-size: 100px;
+      color: white;
+      text-shadow: 5px 5px 5px black; }
+    .container__greeting__button {
+      text-decoration: none;
+      margin: 10px 20px;
+      padding: 15px 30px;
+      border: 2px solid #1a1a1a;
+      border-bottom-width: 4px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #e9e9e9;
+      background: #252525;
+      transition: color 1s, background 0.5s;
+      width: 200px;
+      height: 70px;
+      font-size: 18px;
+      box-shadow: 4px 4px 10px black;
+      margin-top: 30px; }
+    .container__greeting__button:hover {
+      animation: button__timing 1s infinite linear;
+      background: linear-gradient(45deg, #2e2e2e 25%, #242424 25%, #242424 50%, #2e2e2e 50%, #2e2e2e 75%, #242424 75%, #242424);
+      background-size: 10px 10px;
+      color: #cecece;
+      cursor: pointer; }
+  .container__timing {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 950px;
+    height: 350px;
+    opacity: 0;
+    transition: all 0.5s; }
+    .container__timing__title {
+      color: white;
+      font-size: 65px;
+      text-align: center;
+      text-shadow: 5px 5px 5px black; }
+    .container__timing__buttons {
+      margin-top: 80px;
+      display: flex;
+      width: 950px;
+      justify-content: space-around; }
+      .container__timing__buttons__button {
+        text-decoration: none;
+        margin: 10px 20px;
+        padding: 15px 30px;
+        border: 2px solid #1a1a1a;
+        border-bottom-width: 4px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #e9e9e9;
+        background: #252525;
+        transition: color 1s, background 0.5s;
+        width: 200px;
+        height: 70px;
+        font-size: 18px;
+        box-shadow: 4px 4px 10px black; }
+      .container__timing__buttons__button:hover {
+        animation: button__timing 1s infinite linear;
+        background: linear-gradient(45deg, #2e2e2e 25%, #242424 25%, #242424 50%, #2e2e2e 50%, #2e2e2e 75%, #242424 75%, #242424);
+        background-size: 10px 10px;
+        color: #cecece;
+        cursor: pointer; }
+  .container__appearance {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 950px;
+    height: 350px;
+    opacity: 0;
+    transition: all 0.5s; }
+    .container__appearance__title {
+      color: white;
+      font-size: 65px;
+      text-align: center;
+      text-shadow: 5px 5px 5px black; }
+    .container__appearance__buttons {
+      margin-top: 80px;
+      display: flex;
+      width: 950px;
+      justify-content: space-around; }
+      .container__appearance__buttons__button {
+        text-decoration: none;
+        margin: 10px 20px;
+        padding: 15px 30px;
+        border: 2px solid #1a1a1a;
+        border-bottom-width: 4px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #e9e9e9;
+        background: #252525;
+        transition: color 1s, background 0.5s;
+        width: 200px;
+        height: 70px;
+        font-size: 18px;
+        box-shadow: 4px 4px 10px black; }
+      .container__appearance__buttons__button:hover {
+        animation: button__timing 1s infinite linear;
+        background: linear-gradient(45deg, #2e2e2e 25%, #242424 25%, #242424 50%, #2e2e2e 50%, #2e2e2e 75%, #242424 75%, #242424);
+        background-size: 10px 10px;
+        color: #cecece;
+        cursor: pointer; }
+  .container__game {
+    width: 600px;
+    height: 700px;
+    display: none;
+    flex-direction: column;
+    border: 2px solid #0e0e0e;
+    transition: all 0.5s;
+    opacity: 0; }
+    .container__game__scoreboard {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e2e2e;
+      color: white; }
+      .container__game__scoreboard .time {
+        margin-right: 20px; }
+        .container__game__scoreboard .time label {
+          margin-left: 5px; }
+      .container__game__scoreboard .score {
+        margin-left: 20px; }
+        .container__game__scoreboard .score label {
+          margin-left: 5px; }
+    .container__game__field {
+      width: 100%;
+      height: 96%;
+      background-color: #141414;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container__game__field p {
+        font-size: 30px;
+        color: #c7c7c7; }
+      .container__game__field__circle {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        height: 30px;
+        background-color: #c7c7c7; }
+
+.opacity_zero {
+  opacity: 0; }
+
+.opacity_one {
+  opacity: 1; }
+
+@keyframes button__timing {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 50px 0; } }
+
+/*# sourceMappingURL=style.css.map */
